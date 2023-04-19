@@ -1,0 +1,28 @@
+{
+  "name": "02-nodejs-ignite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.6",
+    "typescript": "^5.0.4",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^18.15.11",
+    "eslint": "^8.38.0",
+    "tsx": "^3.12.6"
+  }
+}
